@@ -31,7 +31,7 @@ resource "google_container_node_pool" "general"{
   }
 }
 
-rource "google_container_node_pool" "spot"{
+resource "google_container_node_pool" "spot"{
   name     = "spot"
   cluster = "google_container_cluster.primary.id"
   node_count = 1
