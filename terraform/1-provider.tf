@@ -2,7 +2,7 @@
 #test
 
 provider "google" {
-  project     = "devops-course-18.02-18.03.2023"
+  project     = "sound-sanctuary-381109"
   region      = "us-central1"
 }
 
