@@ -11,17 +11,11 @@ resource "google_container_cluster" "primary"{
   monitoring_service       = "monitoring.googleapis.com/kubernetes"
   networking_mode          = "VPC_NATIVE"
 
-  node_location = [
-    "us-central1-b"
-  ]
-
   addons_config{
     http_load_balancing {
-      disable = false
-      disabled = false
+      disabled = true
     }
     horizontal_pod_autoscaling {
-      disable = false
       disabled = false
     }
   } 
@@ -31,7 +25,7 @@ resource "google_container_cluster" "primary"{
   }
   
   workload_identity_config{
-    workload_pool = "devops-v4.svc.id.google"
+    workload_pool = "devops-v4.svc.id.goog"
   }
 
   ip_allocation_policy{

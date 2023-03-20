@@ -25,7 +25,7 @@ resource "google_container_node_pool" "general"{
     }
   
     service_account = google_service_account.kubernetes.email
-    oauth_scope = [
+    oauth_scopes = [
       "https://www.googleapis.com/auth/cloud-platform"
     ]
   }
@@ -60,7 +60,7 @@ resource "google_container_node_pool" "spot"{
     }
 
     service_account = google_service_account.kubernetes.email
-    oauth_scope = [
+    oauth_scopes = [
       "https://www.googleapis.com/auth/cloud-platform"
     ]
   }
