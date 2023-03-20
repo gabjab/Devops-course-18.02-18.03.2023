@@ -16,30 +16,31 @@ resource "google_container_cluster" "primary"{
   ]
 
   addons_config{
-    http_load_balancing{
-      disable = flase    
-    }
-    horizontal_pod_autoscling{
+    http_load_balancing {
       disable = false
+    }
+    horizontal_pod_autoscaling {
+      disable = false
+      disabled = false
     }
   } 
 
-  release_channal{
+  release_channel{
     channel  = "REGULAR"
   }
   
   workload_identity_config{
-    workload_pool = "devops-v4.svc.id.goog"
+    workload_pool = "devops-v4.svc.id.google"
   }
 
   ip_allocation_policy{
-    cluster_secondery_range_name  = "k8s-pod_range"
+    cluster_secondary_range_name  = "k8s-pod_range"
     services_secondary_range_name = "k8s-service_range"  
   }
 
   private_cluster_config{
     enable_private_nodes   = true
-    enable_prvate_endpoint = false
+    enable_private_endpoint = false
     master_ipv4_cidr_block = "172.16.0.0/28"
   }
 }

@@ -14,7 +14,7 @@ terraform {
     prefix  = "terraform/state"
   }
   required_providers{
-   goole = {
+   google = {
      source = "hashicorp/google"
      version = "~>4.0"
     }
