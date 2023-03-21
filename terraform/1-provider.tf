@@ -2,7 +2,7 @@
 #test
 
 provider "google" {
-  project     = "sound-sanctuary-381109"
+  project     = "teak-trainer-381311"
   region      = "us-central1"
 }
 
