@@ -10,7 +10,7 @@ provider "google" {
 
 terraform {
   backend "gcs" {
-    bucket  = "tf-state-prod-gabi"
+    bucket  = "tf-state-prod-gabi1"
     prefix  = "terraform/state"
   }
   required_providers{
