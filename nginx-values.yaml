@@ -16,7 +16,7 @@ controller:
             - key: app.kubernetes.io/name
               operator: In
               values:
-                -ingress-nginx
+                - ingress-nginx
         topologyKey: "kubernetes.io/hostname"
   replicaCount: 1
   admissionWebhooks:
