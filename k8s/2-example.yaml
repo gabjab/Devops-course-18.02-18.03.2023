@@ -7,7 +7,7 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   annotations:
-    iam.gke.io/gcp-service-account: service-a@teak-trainer-381311.iam.gserviceaccount.com
+    iam.gke.io/gcp-service-account: service-a@gabi1-381514.iam.gserviceaccount.com
   name: service-a
   namespace: staging
 ---

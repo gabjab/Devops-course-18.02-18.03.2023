@@ -29,7 +29,7 @@ resource "google_container_cluster" "primary"{
   }
   
   workload_identity_config {
-    workload_pool = "teak-trainer-381311.svc.id.goog"
+    workload_pool = "gabi1-381514.svc.id.goog"
   }
 
   ip_allocation_policy {

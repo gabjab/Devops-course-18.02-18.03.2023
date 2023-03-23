@@ -2,7 +2,7 @@
 #test
 
 provider "google" {
-  project     = "teak-trainer-381311"
+  project     = "gabi1-381514"
   region      = "us-central1"
 }
 
@@ -10,7 +10,7 @@ provider "google" {
 
 terraform {
   backend "gcs" {
-    bucket  = "tf-state-prod-gabi1"
+    bucket  = "tf-test-gabi"
     prefix  = "terraform/state"
   }
   required_providers{
